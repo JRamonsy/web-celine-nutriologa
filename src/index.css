@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+    --font-home: "Kaushan Script", cursive;
+    --font-home-1: "Playwrite DE SAS", cursive;
+}
