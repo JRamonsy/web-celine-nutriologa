@@ -26,7 +26,7 @@ const ContactPage = () => {
             <h3 className=" font-descriptive font-bold text-center md:text-lg xl:text-xl " >Monterrey #25, Santa Barbara, Villa de Pozos, SLP.Monterrey #25, Santa Barbara, Villa de Pozos, SLP.</h3>
           </div>
           <div className="flex justify-center" >
-            <iframe className="rounded-[20px] md:w-[600px] md:h-[300px] xl:w-[900px] " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.8269810737465!2d-100.90472752468943!3d22.13257154895409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa392a28065a3%3A0x14c58b1f6cb6ec10!2sSta.%20Barbara%2C%20Villas%20del%20Sol%2C%2078394%20San%20Luis%20Potos%C3%AD%2C%20S.L.P.!5e0!3m2!1ses-419!2smx!4v1761170757727!5m2!1ses-419!2smx"  ></iframe>
+            <iframe className="rounded-[20px] md:w-[600px] md:h-[300px] xl:w-[900px] " src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d462.04182419837537!2d-100.8850129!3d22.113215!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa47e0ad6485d%3A0x4132943c0a3cd5af!2sQuinta%20Monterey!5e0!3m2!1ses-419!2smx!4v1761330548925!5m2!1ses-419!2smx"  ></iframe>
           </div>
         </div>
       </section>
