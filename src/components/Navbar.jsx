@@ -7,12 +7,21 @@ const Navbar = () => {
   return (
     <header className="bg-[#EA580C] fixed top-0 left-0 w-full z-50 shadow-md">
       {/* Contenedor principal */}
-      <div className="flex justify-between items-center p-4 xl:p-2  max-w-6xl mx-auto      ">
+      <div className="flex justify-between items-center p-3 md:p-2 xl:p-1  max-w-7xl mx-auto      ">
         {/* Logo */}
         <div className="cursor-pointer w-8 transition-transform duration-300 hover:scale-110 xl:w-[50px] xl:h-auto ">
           <Link to="/" >
             <img src="\imgs\logo-home-1.jpg" alt="Logo de Celine Betancourt" />
           </Link>
+        </div>
+
+        <div className=" flex flex-col items-center ">
+          <h1 className="text-2xl md:text-3xl xl:text-4xl font-home text-white font-bold text-shadow-2xs text-shadow-black              ">
+            Celine Betancourt
+          </h1> 
+          <h2 className="text-white md:text-xl xl:text-2xl text-shadow-2xs text-shadow-black ">
+            NUTRIÓLOGA
+          </h2> 
         </div>
 
         {/* Ícono hamburguesa (solo visible en pantallas pequeñas) */}
@@ -43,17 +52,17 @@ const Navbar = () => {
             isOpen ? "translate-x-0" : "-translate-x-full xl:translate-x-0"
           }`}
         >
-          <ul className="flex flex-col xl:flex-row text-center xl:text-left">
-            <li className="m-[15px] xl:text-2xl text-white hover:text-gray-200 transition-colors">
+          <ul className="flex flex-col xl:flex-row text-center xl:text-left font-two-title-1 font-bold ">
+            <li className="m-[15px] xl:text-xl text-white hover:text-gray-200 transition-colors">
               <Link to="/" onClick={() => setIsOpen(false)}>INICIO</Link>
             </li>
-            <li className="m-[15px] xl:text-2xl text-white hover:text-gray-200 transition-colors">
+            <li className="m-[15px] xl:text-xl text-white hover:text-gray-200 transition-colors">
               <Link to="/acerca-de-mi" onClick={() => setIsOpen(false)}>SOBRE MI</Link>
             </li>
-            <li className="m-[15px] xl:text-2xl text-white hover:text-gray-200 transition-colors">
+            <li className="m-[15px] xl:text-xl text-white hover:text-gray-200 transition-colors">
               <Link to="/servicios" onClick={() => setIsOpen(false)}>SERVICIOS</Link>
             </li>
-            <li className="m-[15px] xl:text-2xl text-white hover:text-gray-200 transition-colors">
+            <li className="m-[15px] xl:text-xl text-white hover:text-gray-200 transition-colors">
               <Link to="/contacto" onClick={() => setIsOpen(false)}>CONTACTO</Link>
             </li>
           </ul>
