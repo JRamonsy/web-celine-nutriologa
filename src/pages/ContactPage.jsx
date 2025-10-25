@@ -8,7 +8,7 @@ const ContactPage = () => {
         </h1>
       </section>
 
-      <section className="w-[95%] bg-slate-200 rounded py-2 px-3 " >
+      <section className="w-[95%] bg-lime-200 rounded py-2 px-3 rounded-[25px] " >
         <div >
           <h3 className=" font-one-title text-xl md:text-2xl xl:text-3xl font-bold text-center " >
             Agenda tu cita en alguno de los siguientes consultorios:</h3>  

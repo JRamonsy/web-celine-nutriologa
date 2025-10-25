@@ -16,10 +16,10 @@ const Navbar = () => {
         </div>
 
         <div className=" flex flex-col items-center ">
-          <h1 className="text-2xl md:text-3xl xl:text-4xl font-home text-white font-bold text-shadow-2xs text-shadow-black              ">
+          <h1 className="text-2xl md:text-3xl xl:text-4xl font-title-one font-medium  text-white   text-shadow-2xs text-shadow-black              ">
             Celine Betancourt
           </h1> 
-          <h2 className="text-white md:text-xl xl:text-2xl text-shadow-2xs text-shadow-black ">
+          <h2 className="text-white md:text-xl xl:text-2xl text-shadow-2xs text-shadow-black font-home-one font-light ">
             NUTRIÓLOGA
           </h2> 
         </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
             isOpen ? "translate-x-0" : "-translate-x-full xl:translate-x-0"
           }`}
         >
-          <ul className="flex flex-col xl:flex-row text-center xl:text-left font-two-title-1 font-bold ">
+          <ul className="flex flex-col xl:flex-row text-center xl:text-left font-title-one  ">
             <li className="m-[15px] xl:text-xl text-white hover:text-gray-200 transition-colors">
               <Link to="/" onClick={() => setIsOpen(false)}>INICIO</Link>
             </li>

@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Stalemate&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
@@ -12,6 +13,7 @@
 @theme {
     --font-home: "Kaushan Script", cursive;
     --font-home-1: "Playwrite DE SAS", cursive;
+    --font-title-one: "Montserrat", sans-serif;
     --font-two-title-1: "Cormorant Unicase", serif;
     --font-two-title-2: "Stalemate", cursive;
     --font-one-title: "Cinzel Decorative", serif;

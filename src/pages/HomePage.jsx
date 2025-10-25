@@ -23,7 +23,7 @@ const HomePage = () => {
         </div> */}
         <div className=" mb-10  ">
           <button className="bg-red-400 text-white rounded-[15px] py-1 px-3 cursor-pointer mr-1 md:mr-2 hover:bg-red-500 border border-white/20 transition duration-300 shadow-md md:text-3xl " >
-            <Link to="/acerca-de-mi" >CONOCEME</Link>
+            <Link to="/acerca-de-mi" >CONÓCEME</Link>
           </button>
           <button className="bg-red-400 text-white rounded-[15px] py-1 px-3 cursor-pointer ml-1 md:ml-2 hover:bg-red-500 border border-white/20 transition duration-300 shadow-md md:text-3xl " >
             <Link to="/contacto" >CONTACTAME</Link>
@@ -44,7 +44,7 @@ const HomePage = () => {
             </div> */}
             <div className=" flex justify-center ">
               <button className="bg-red-400 text-white rounded-[15px] py-1 px-3 cursor-pointer mr-1 md:mr-2 hover:bg-red-500 border border-white/20 transition duration-300 shadow-md text-2xl " >
-                <Link to="/acerca-de-mi" >CONOCEME</Link>
+                <Link to="/acerca-de-mi" >CONÓCEME</Link>
               </button>
               <button className="bg-red-400 text-white rounded-[15px] py-1 px-3 cursor-pointer ml-1 md:ml-2 hover:bg-red-500 border border-white/20 transition duration-300 shadow-md text-2xl " >
                 <Link to="/contacto" >CONTACTAME</Link>
@@ -53,11 +53,11 @@ const HomePage = () => {
           </div>
           <div>
             <section className="w-full h-[250px] bg-red-600 rounded-[20px] flex flex-col justify-center items-center shadow-[0_4px_20px_rgba(0,0,0,0.15)]  " >
-              <div className="w-full flex justify-center gap-x-2 mb-2">
-                <h2 className="text-5xl text-white font-two-title-1 font-bold ">
+              <div className="w-full flex justify-center items-center gap-x-2 mb-2">
+                <h2 className="text-5xl text-white font-two-title-1 ">
                   Mis redes
                 </h2>
-                <h2 className=" font-two-title-2 font-bold text-5xl xl:text-7xl text-white " >
+                <h2 className=" font-two-title-2 text-xl xl:text-7xl text-white " >
                   Sociales
                 </h2>
               </div>
@@ -75,11 +75,11 @@ const HomePage = () => {
         <div className="bg-[url(/imgs/img-home.jpg)] bg-cover w-[50%] " ></div>
       </section>
       <section className="w-full h-[200px] md:h-[250px] bg-red-600 rounded-b-[20px] flex flex-col justify-center items-center shadow-[0_4px_20px_rgba(0,0,0,0.15)] xl:hidden " >
-        <div className="w-full flex justify-center gap-x-2 mb-2">
-          <h2 className="text-3xl md:text-5xl text-white font-two-title-1 font-bold ">
+        <div className="w-full flex justify-center items-center gap-x-2 mb-2">
+          <h2 className="text-3xl md:text-5xl text-white font-two-title-1  ">
             Mis redes
           </h2>
-          <h2 className="text-5xl font-two-title-2 font-bold md:text-7xl  text-white " >
+          <h2 className="text-5xl font-two-title-2 md:text-6xl text-white " >
             Sociales
           </h2>
         </div>
@@ -94,7 +94,7 @@ const HomePage = () => {
       </section>
 
       <section className=" bg-white w-[95%] h-[300px] md:h-[400px] xl:h-[750px] flex flex-col justify-center item-center my-4 rounded-[15px] shadow-[0_4px_20px_rgba(0,0,0,0.15)] ">
-        <div className="text-center text-3xl md:text-5xl xl:text-6xl font-one-title font-bold ">
+        <div className="text-center text-3xl md:text-4xl xl:text-5xl font-two-title-1 font-bold ">
           <h2>Servicios</h2>
         </div>
         <div className="flex" >
@@ -112,12 +112,12 @@ const HomePage = () => {
           </ul>
         </div>
       </section>
-      <section className="w-[95%] h-[455px] md:h-[390px] xl:h-[500px] bg-gray-200 rounded-[10px] flex flex-col items-center rounded-[15px] shadow-[0_4px_20px_rgba(0,0,0,0.15)] ">
-        <div className="w-full flex justify-center gap-x-2 mb-2 xl:my-4 " >
-          <h2 className="text-3xl md:text-5xl font-two-title-1 font-bold ">
+      <section className="w-[95%] h-auto bg-gray-200 rounded-[10px] flex flex-col items-center rounded-[15px] shadow-[0_4px_20px_rgba(0,0,0,0.15)] py-3 ">
+        <div className="w-full flex justify-center items-center gap-x-2 mb-2 xl:my-4 " >
+          <h2 className="text-3xl md:text-4xl  xl:text-5xl font-two-title-1 font-bold  ">
             Que incluye tu
           </h2>
-          <h2 className="text-5xl font-two-title-2 font-bold md:text-7xl " >
+          <h2 className="text-5xl font-two-title-2  md:text-6xl xl:text-7xl " >
             Cita
           </h2>
         </div>
@@ -137,11 +137,11 @@ const HomePage = () => {
       <section className="w-[95%] h-[600px] md:h-auto xl:h-[650px] bg-white rounded-[15px] flex flex-col items-center my-4 shadow-[0_4px_20px_rgba(0,0,0,0.15)] ">
         <div className="w-full h-[200px] xl:h-[300px] bg-[url(/imgs/planes-alimentacion.jpeg)] bg-cover bg-center rounded-t-[15px] " >
         </div>
-        <div className="w-full flex justify-center gap-x-2 mb-2 xl:my-4 " >
-          <h2 className="text-3xl md:text-5xl font-two-title-1 font-bold ">
+        <div className="w-full flex justify-center items-center gap-x-2 mb-2 xl:my-4 " >
+          <h2 className="text-3xl md:text-4xl xl:text-5xl font-two-title-1 font-bold ">
             Planes de
           </h2>
-          <h2 className="text-5xl font-two-title-2 font-bold md:text-7xl " >
+          <h2 className="text-5xl font-two-title-2 md:text-6xl xl:text-7xl " >
             Alimentacón
           </h2>
         </div>

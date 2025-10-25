@@ -6,7 +6,7 @@ const ServicesPage = () => {
         <h1 className="text-4xl font-two-title-1 font-bold md:text-5xl xl:text-7xl text-white text-shadow-lg ">
           Mis
         </h1>
-        <h2 className=" font-two-title-2 font-bold text-6xl md:text-7xl xl:text-9xl text-white text-shadow-lg " >
+        <h2 className=" font-two-title-2 text-6xl md:text-7xl xl:text-9xl text-white text-shadow-lg " >
           Servicios
         </h2>
       </section>

@@ -8,7 +8,7 @@ const AboutMePage = () => {
         <h1 className="text-4xl md:text-5xl xl:text-7xl text-white text-shadow-lg font-two-title-1 font-bold ">
           Conoce mas
         </h1>
-        <h2 className=" font-two-title-2 font-bold text-6xl md:text-7xl xl:text-9xl text-white text-shadow-lg " >
+        <h2 className=" font-two-title-2 text-6xl md:text-7xl xl:text-9xl text-white text-shadow-lg " >
           Acerca de Mi
         </h2>
       </section>
@@ -21,14 +21,20 @@ const AboutMePage = () => {
             <h2 className='text-white font-one-title font-bold text-xl md:text-2xl bg-[rgba(254,64,52,1)] rounded-t-[25px]  py-1  text-center'>PREPARACIÓN PROFESIONAL</h2>
             <div className='bg-white w-full h-auto rounded-b-[25px] p-2 shadow-[0_4px_20px_rgba(0,0,0,0.15)] md:text-lg ' >
               <ul>
-                <li className='font-bold font-subtitles' >LICENCIATURA EN NUTRICIÓN:</li>
+                <div className='flex' >
+                  <li className='font-subtitles bg-[#c8d756] text-white rounded-[10px] px-1 ' >LICENCIATURA EN NUTRICIÓN:</li>
+                </div>
                 <li className='font-descriptive font-bold' >Universidad Autónoma de San Luis Potosí</li>
                 <br />
-                <li className='font-bold font-subtitles ' >DIPLOMADOS:</li>
+                <div className='flex' >
+                  <li className='font-subtitles bg-[#c8d756] text-white rounded-[10px] px-1 ' >DIPLOMADOS:</li>
+                </div>
                 <li className='font-descriptive font-bold' >Psico nutrición: Alimentación con Conciencia</li>
                 <li className='font-descriptive font-bold' >Obesidad. Diagnostico y tratamiento en el ciclo vital</li>
                 <br />
-                <li className='font-bold font-subtitles ' >CERTIFICACIONES:</li>
+                <div className='flex' >
+                  <li className='font-subtitles bg-[#c8d756] text-white rounded-[10px] px-1 ' >CERTIFICACIONES:</li>
+                </div>
                 <li className='font-descriptive font-bold' >Certificación internacional de interpretación de exámenes Bioquímicos.</li>
                 <li className='font-descriptive font-bold' >Certificación en Psicología Alimentaria. </li>
                 <li className='font-descriptive font-bold' >Certificación internacional de nutrición aplicada a la imagen y estética (en curso).</li>
@@ -40,7 +46,9 @@ const AboutMePage = () => {
             <h2 className='text-white font-one-title font-bold text-xl md:text-2xl bg-[rgba(254,64,52,1)] rounded-t-[25px] py-1  text-center'>EXPERIENCIA</h2>
             <div className='bg-white w-full h-auto rounded-b-[25px] p-2 shadow-[0_4px_20px_rgba(0,0,0,0.15)] md:text-lg ' >
               <ul>
-                <li className='font-bold font-subtitles ' >CONSULTA PRIVADA</li>
+                <div className='flex' >
+                  <li className='font-subtitles bg-[#c8d756] text-white rounded-[10px] px-1 ' >CONSULTA PRIVADA</li>
+                </div>
                 <li className='font-descriptive font-bold' >5 años de experiencia atendiendo a todo tipo de población. Mayor enfoque en:</li>
                 <br />
                 <li className='font-descriptive font-bold' >Psico nutrición / TCA / Comedor emocional.</li>
@@ -50,7 +58,9 @@ const AboutMePage = () => {
                 <li className='font-descriptive font-bold' >Trabajadores / Empresas.</li>
                 <li className='font-descriptive font-bold' >Niños en etapa preescolar y escolar.</li>
                 <br />
-                <li className='font-bold font-subtitles ' >GASTRONOMÍA</li>
+                <div className='flex' >
+                  <li className='font-subtitles bg-[#c8d756] text-white rounded-[10px] px-1 ' >GASTRONOMÍA</li>
+                </div>
                 <li className='font-descriptive font-bold' >Más de 10 años de experiencia: </li>
                 <li className='font-descriptive font-bold' >Gastronomía funcional. </li>
                 <li className='font-descriptive font-bold' >Cocina saludable.</li>
