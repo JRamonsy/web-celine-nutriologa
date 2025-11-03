@@ -4,6 +4,43 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 
 const HomePage = () => {
+
+  const dataPlans = [
+    {
+      img: "/imgs/plan1.jpg",
+      title1: "PLAN DUO",
+      description1bold: "Parejas o Roomies",
+      description1: "que compartan comidas justos. ",
+      title2: "PRECIO",
+      description2: "$999 inicial duo, $899 seguimiento duo"
+    },
+    {
+      img: "/imgs/plan2.jpg",
+      title1: "PLAN FAMILIAR",
+      description1bold: "Familias a partir de 3 integrantes",
+      description1: "que compartan comidas.",
+      title2: "PRECIO",
+      description2: "$499 p/p inicial, $499 seguimientos"
+    },
+    {
+      img: "/imgs/plan3.jpg",
+      title1: "PAQUETE ANUAL",
+      description1bold: "Que la disidia no te gane.",
+      description1: "Este plan es perfecto para ti si deseas tener mas compromiso contigo y tus objetivos.",
+      title2: "PRECIO",
+      description2: "$5445 inicial + 11 seguimientos"
+    },
+    {
+      img: "/imgs/plan4.jpg",
+      title1: "PAQUETE ESTUDIANTE",
+      description1bold: "Presenta tu credencial vigente",
+      description1: "de ciclo escolar o constancia de estudios",
+      title2: "PRECIO",
+      description2: "$415 inicial, $375 seguimientos"
+    }
+  ]
+
+
   return (
     <header className="flex flex-col items-center ">
       <div 
@@ -134,7 +171,7 @@ const HomePage = () => {
           <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Descuentos en varios centros de ejercicio/entrenamiento </li>
         </ul>
       </section>
-      <section className="w-[95%] h-[600px] md:h-auto xl:h-[650px] bg-white rounded-[15px] flex flex-col items-center my-4 shadow-[0_4px_20px_rgba(0,0,0,0.15)] ">
+      {/* <section className="w-[95%] h-[600px] md:h-auto xl:h-[650px] bg-white rounded-[15px] flex flex-col items-center my-4 shadow-[0_4px_20px_rgba(0,0,0,0.15)] ">
         <div className="w-full h-[200px] xl:h-[300px] bg-[url(/imgs/planes-alimentacion.jpeg)] bg-cover bg-center rounded-t-[15px] " >
         </div>
         <div className="w-full flex justify-center items-center gap-x-2 mb-2 xl:my-4 " >
@@ -155,7 +192,42 @@ const HomePage = () => {
           <li>• Acceso a la base de datos de preguntas comunes completas</li>
           <li>• Entre otras cosas</li>
         </ul>
+      </section> */}
+
+      <section className="w-[95%] h-auto md:h-auto xl:h-[650px] bg-white rounded-[15px] flex flex-col items-center my-4 shadow-[0_4px_20px_rgba(0,0,0,0.15)]" >
+        <div className="w-full flex flex-col  items-center gap-x-2 mb-2 xl:my-4 " >
+          <h2 className="text-3xl md:text-4xl xl:text-5xl font-two-title-1 font-bold ">
+            Esquemas de
+          </h2>
+          <h2 className="text-5xl font-two-title-2 md:text-6xl xl:text-7xl " >
+            Planes
+          </h2>
+          <div className="flex flex-col items-center  " >
+            {
+              dataPlans.map((plans, id) => (
+                <div className=" rounded-[25px] flex flex-col items-center w-[90%] my-2 rounded-[100px] border-8 border-orange-500  " key={id}>
+                  <div className=" relative flex justify-center " >
+                    <div className={`w-full h-auto   `} >
+                      <img src={plans.img} alt="imagen de menu" className="rounded-[90px] border-8 border-orange-500 " />
+                    </div>
+                    <div className="bg-orange-500 rounded-[15px] px-6 py-3 absolute  -bottom-6 " >
+                      <h2 className="text-white text-2xl font-bold " >{plans.title1}</h2>
+                    </div>
+                  </div> 
+
+                  <div className="flex flex-col items-center w-[70%] my-6 " >
+                    <p className="text-center font-bold " >{plans.description1bold}</p>
+                    <p className="text-center" >{plans.description1}</p>
+                    <h3 className="font-bold" >{plans.title2}</h3>
+                    <p className="text-center" >{plans.description2}</p>                   
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
       </section>
+
     </header>
   )
 }
