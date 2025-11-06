@@ -97,17 +97,17 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className=" bg-white w-[95%] h-auto md:h-[400px] xl:h-[750px] flex flex-col justify-center item-center my-2 rounded-[15px] shadow-[0_4px_20px_rgba(0,0,0,0.15)] py-3 " >
+      <section className=" bg-white w-[95%] h-auto md:h-auto xl:h-auto flex flex-col justify-center item-center my-2 rounded-[15px] shadow-[0_4px_20px_rgba(0,0,0,0.15)] py-3 " >
         <div className="text-center text-3xl md:text-4xl xl:text-5xl font-two-title-1 font-bold ">
           <h2>Servicios</h2>
         </div>
-        <div className=" p-2 flex flex-col items-center   " >
+        <div className=" p-2 flex flex-col items-center xl:flex-row xl:flex-wrap xl:gap-3 xl:justify-center  " >
           {
             dataServices.map((services, id) => (
             <div className="bg-orange-500 my-1 rounded-lg px-5 flex items-center justify-center  " key={id} >
-              <p className="text-2xl text-white" >{services.icon}</p> 
-              <h2 className="font-descriptive font-bold text-white py-1 px-5 text-center " > {services.title} </h2>
-              <p className="text-2xl text-white" >{services.icon}</p>
+              <p className="text-2xl md:text-3xl xl:text-4xl text-white" >{services.icon}</p> 
+              <h2 className=" md:text-2xl xl:text-3xl font-descriptive font-bold text-white py-1 px-5 text-center " > {services.title} </h2>
+              <p className="text-2xl md:text-3xl xl:text-4xl text-white" >{services.icon}</p>
             </div>
             ))
           }
@@ -137,7 +137,7 @@ const HomePage = () => {
         </div>
       </section> */}
 
-      <section className="w-[95%] h-auto md:h-auto xl:h-[650px] bg-white rounded-[15px] flex flex-col items-center my-2 shadow-[0_4px_20px_rgba(0,0,0,0.15)] py-3 " >
+      <section className="w-[95%] h-auto md:h-auto xl:h-auto bg-white rounded-[15px] flex flex-col items-center my-2 shadow-[0_4px_20px_rgba(0,0,0,0.15)] py-3 " >
         <div className="w-full flex flex-col  items-center gap-x-2 mb-2 xl:my-4 " >
           <h2 className="text-3xl md:text-4xl xl:text-5xl font-two-title-1 font-bold ">
             Esquemas de
@@ -145,16 +145,16 @@ const HomePage = () => {
           <h2 className="text-5xl font-two-title-2 md:text-6xl xl:text-7xl " >
             Planes
           </h2>
-          <div className="flex flex-col items-center  " >
+          <div className="flex flex-col items-center md:flex-row md:flex-wrap md:items-start md:gap-1 md:justify-center xl:gap-5 " >
             {
               dataPlans.map((plans, id) => (
-                <div className=" rounded-[25px] flex flex-col items-center w-[90%] my-2 rounded-[100px] border-8 border-orange-500  " key={id}>
+                <div className=" rounded-[25px] flex flex-col items-center w-[90%] md:w-[45%] xl:w-[20%] my-2 rounded-[100px] border-8 border-orange-500  " key={id}>
                   <div className=" relative flex justify-center " >
                     <div className={`w-full h-auto   `} >
                       <img src={plans.img} alt="imagen de menu" className="rounded-[90px] border-8 border-orange-500 " />
                     </div>
                     <div className="bg-orange-500 rounded-[15px] px-6 py-3 absolute  -bottom-6 " >
-                      <h2 className="text-white text-2xl font-bold " >{plans.title1}</h2>
+                      <h2 className="text-white text-2xl font-bold  " >{plans.title1}</h2>
                     </div>
                   </div> 
 
@@ -194,7 +194,7 @@ const HomePage = () => {
         </ul>
       </section>
 
-      <section className="w-[95%] h-auto md:h-auto xl:h-[650px] bg-white rounded-[15px] flex flex-col items-center my-2 shadow-[0_4px_20px_rgba(0,0,0,0.15)] py-3" >
+      <section className="w-[95%]  h-auto md:h-auto xl:h-auto bg-white rounded-[15px] flex flex-col items-center my-2 shadow-[0_4px_20px_rgba(0,0,0,0.15)] py-3" >
 
         <div className="w-full flex justify-center items-center gap-x-2 mb-2 xl:my-4 " >
           <h2 className="text-3xl md:text-4xl  xl:text-5xl font-two-title-1 font-bold  ">
@@ -206,7 +206,7 @@ const HomePage = () => {
         </div>
 
 
-        <div className=" w-[90%] flex  overflow-x-auto overflow-y-scroll no-scrollbar rounded-xl  " >
+        <div className=" w-[90%] md:w-[80%] xl:w-[50%] flex  overflow-x-auto overflow-y-scroll no-scrollbar rounded-xl xl:overflow-y-auto pb-5  " >
           <div className="flex animate-scroll " >
             <div className="bg-[url(/imgs/office-1.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
             <div className="bg-[url(/imgs/office-2.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>

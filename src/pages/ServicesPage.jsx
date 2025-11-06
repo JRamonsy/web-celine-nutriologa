@@ -14,31 +14,32 @@ const ServicesPage = () => {
 
       <section className="w-[95%]  " >
 
+        <div className="  " >
 
-        <div className="w-full   " >
-          {
-            dataServices.map((services, id) => (
-              <div className=" my-2 p-2 flex flex-col items-center rounded-xl bg-white shadow-[0_4px_20px_rgba(0,0,0,0.15)] " key={id}>
-                <div className="relative flex justify-center " >
-                  <div className=" bg-orange-500 py-1 px-2 rounded-t-xl absolute w-[80%]  " >
-                    <h2 className="font-bold text-white text-center " > {services.title} </h2> 
+          <div className=" flex flex-wrap md:gap-2 xl:gap-4 justify-center  " >
+            {
+              dataServices.map((services, id) => (
+                <div className="md:w-[45%] xl:w-[20%] my-2 p-2 flex flex-col items-center rounded-xl bg-white shadow-[0_4px_20px_rgba(0,0,0,0.15)] " key={id}>
+                  <div className="relative flex justify-center " >
+                    <div className=" bg-orange-500 py-1 px-2 rounded-t-xl absolute w-[80%]  " >
+                      <h2 className="font-bold text-white text-center " > {services.title} </h2>
+                    </div>
+                    <img src={services.img} alt="" className="w-[80%]  rounded-xl  " />
                   </div>
-                  <img src={services.img} alt="" className="w-[80%]  rounded-xl  " />
+
+                  <div className="flex flex-col items-center" >
+                    <h3 className="font-bold" > {services.subTitle} </h3>
+                    <p className="p-1  " > {services.information} </p>
+                  </div>
+
                 </div>
+              ))
 
-                <div className="flex flex-col items-center" >
-                  <h3 className="font-bold" > {services.subTitle} </h3>
-                  <p className="p-1  " > {services.information} </p>
-                </div>
-
-              </div>
-            ))
-      
-          }
-        </div>
-    
+            }
+          </div>
 
 
+  </div>
 
 
 
