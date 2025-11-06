@@ -2,43 +2,10 @@ import { Link } from "react-router-dom"
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
+import { dataServices } from "../information/information";
+import { dataPlans } from "../information/information";
 
 const HomePage = () => {
-
-  const dataPlans = [
-    {
-      img: "/imgs/plan1.jpg",
-      title1: "PLAN DUO",
-      description1bold: "Parejas o Roomies",
-      description1: "que compartan comidas justos. ",
-      title2: "PRECIO",
-      description2: "$999 inicial duo, $899 seguimiento duo"
-    },
-    {
-      img: "/imgs/plan2.jpg",
-      title1: "PLAN FAMILIAR",
-      description1bold: "Familias a partir de 3 integrantes",
-      description1: "que compartan comidas.",
-      title2: "PRECIO",
-      description2: "$499 p/p inicial, $499 seguimientos"
-    },
-    {
-      img: "/imgs/plan3.jpg",
-      title1: "PAQUETE ANUAL",
-      description1bold: "Que la disidia no te gane.",
-      description1: "Este plan es perfecto para ti si deseas tener mas compromiso contigo y tus objetivos.",
-      title2: "PRECIO",
-      description2: "$5445 inicial + 11 seguimientos"
-    },
-    {
-      img: "/imgs/plan4.jpg",
-      title1: "PAQUETE ESTUDIANTE",
-      description1bold: "Presenta tu credencial vigente",
-      description1: "de ciclo escolar o constancia de estudios",
-      title2: "PRECIO",
-      description2: "$415 inicial, $375 seguimientos"
-    }
-  ]
 
 
   return (
@@ -130,7 +97,27 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className=" bg-white w-[95%] h-[300px] md:h-[400px] xl:h-[750px] flex flex-col justify-center item-center my-4 rounded-[15px] shadow-[0_4px_20px_rgba(0,0,0,0.15)] ">
+      <section className=" bg-white w-[95%] h-auto md:h-[400px] xl:h-[750px] flex flex-col justify-center item-center my-2 rounded-[15px] shadow-[0_4px_20px_rgba(0,0,0,0.15)] py-3 " >
+        <div className="text-center text-3xl md:text-4xl xl:text-5xl font-two-title-1 font-bold ">
+          <h2>Servicios</h2>
+        </div>
+        <div className=" p-2 flex flex-col items-center   " >
+          {
+            dataServices.map((services, id) => (
+            <div className="bg-orange-500 my-1 rounded-lg px-5 flex items-center justify-center  " key={id} >
+              <p className="text-2xl text-white" >{services.icon}</p> 
+              <h2 className="font-descriptive font-bold text-white py-1 px-5 text-center " > {services.title} </h2>
+              <p className="text-2xl text-white" >{services.icon}</p>
+            </div>
+            ))
+          }
+        </div>
+        <div className="bg-red-100 py-2" >
+          <h2 className="text-xl font-bold text-center " >"Diseña tu propia experiencia. Siéntete libre de elegir todos los servicios que necesites en una sola visita. ¡Estamos aquí para apoyarte!"</h2>
+        </div>
+      </section>
+
+      {/* <section className=" bg-white w-[95%] h-[300px] md:h-[400px] xl:h-[750px] flex flex-col justify-center item-center my-4 rounded-[15px] shadow-[0_4px_20px_rgba(0,0,0,0.15)] ">
         <div className="text-center text-3xl md:text-4xl xl:text-5xl font-two-title-1 font-bold ">
           <h2>Servicios</h2>
         </div>
@@ -148,53 +135,9 @@ const HomePage = () => {
             <li>Planes de alimentación vegetariana.</li>
           </ul>
         </div>
-      </section>
-      <section className="w-[95%] h-auto bg-gray-200 rounded-[10px] flex flex-col items-center rounded-[15px] shadow-[0_4px_20px_rgba(0,0,0,0.15)] py-3 ">
-        <div className="w-full flex justify-center items-center gap-x-2 mb-2 xl:my-4 " >
-          <h2 className="text-3xl md:text-4xl  xl:text-5xl font-two-title-1 font-bold  ">
-            Que incluye tu
-          </h2>
-          <h2 className="text-5xl font-two-title-2  md:text-6xl xl:text-7xl " >
-            Cita
-          </h2>
-        </div>
-        <ul className="text-lg xl:text-2xl md:text-xl flex flex-col justify-center gap-1 bg-white w-[95%] md:w-[90%] xl:w-[50%] md:px-5 xl:py-5 rounded-[15px] font-descriptive font-bold " >
-          <li className="flex items-center"><FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " />Evaluación nutricional completa</li>
-          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Análisis de composición corporal</li>
-          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Plan de Alimentación personalizado</li>
-          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Guía de Recomendación de Alimentos, marcas y productos</li>
-          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Educación nutricional</li>
-          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Descuentos a cursos, talleres y rifas</li>
-          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Acompañamiento constante vía WA</li>
-          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Establecimiento de metas realistas</li>
-          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Plan de Suplementación *en caso de ser necesario*</li>
-          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Descuentos en varios centros de ejercicio/entrenamiento </li>
-        </ul>
-      </section>
-      {/* <section className="w-[95%] h-[600px] md:h-auto xl:h-[650px] bg-white rounded-[15px] flex flex-col items-center my-4 shadow-[0_4px_20px_rgba(0,0,0,0.15)] ">
-        <div className="w-full h-[200px] xl:h-[300px] bg-[url(/imgs/planes-alimentacion.jpeg)] bg-cover bg-center rounded-t-[15px] " >
-        </div>
-        <div className="w-full flex justify-center items-center gap-x-2 mb-2 xl:my-4 " >
-          <h2 className="text-3xl md:text-4xl xl:text-5xl font-two-title-1 font-bold ">
-            Planes de
-          </h2>
-          <h2 className="text-5xl font-two-title-2 md:text-6xl xl:text-7xl " >
-            Alimentacón
-          </h2>
-        </div>
-        <section className="w-[80%]  ">
-          <h2 className="text-center md:text-xl font-bold xl:text-2xl font-subtitles ">Te presento mis planes de alimentación con los cuáles podrás lograr grandes resultados</h2>
-        </section>
-        <ul className="flex flex-col text-lg md:text-xl xl:text-2xl w-[90%] xl:w-[55%] font-descriptive font-bold ">
-          <li>• Acceso a contenido ilimitado de videos, reseñas, tips, entre otras cosas</li>
-          <li>• Lista del super. (Información de dónde encontrar los productos)</li>
-          <li>• Acceso al grupo de chat para compartir comentarios</li>
-          <li>• Acceso a la base de datos de preguntas comunes completas</li>
-          <li>• Entre otras cosas</li>
-        </ul>
       </section> */}
 
-      <section className="w-[95%] h-auto md:h-auto xl:h-[650px] bg-white rounded-[15px] flex flex-col items-center my-4 shadow-[0_4px_20px_rgba(0,0,0,0.15)]" >
+      <section className="w-[95%] h-auto md:h-auto xl:h-[650px] bg-white rounded-[15px] flex flex-col items-center my-2 shadow-[0_4px_20px_rgba(0,0,0,0.15)] py-3 " >
         <div className="w-full flex flex-col  items-center gap-x-2 mb-2 xl:my-4 " >
           <h2 className="text-3xl md:text-4xl xl:text-5xl font-two-title-1 font-bold ">
             Esquemas de
@@ -227,6 +170,84 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      <section className="w-[95%] h-auto bg-gray-200 rounded-[10px] flex flex-col items-center rounded-[15px] shadow-[0_4px_20px_rgba(0,0,0,0.15)] py-3 my-2 ">
+        <div className="w-full flex justify-center items-center gap-x-2 mb-2 xl:my-4 " >
+          <h2 className="text-3xl md:text-4xl  xl:text-5xl font-two-title-1 font-bold  ">
+            Que incluye tu
+          </h2>
+          <h2 className="text-5xl font-two-title-2  md:text-6xl xl:text-7xl " >
+            Cita
+          </h2>
+        </div>
+        <ul className="text-lg xl:text-2xl md:text-xl flex flex-col justify-center gap-1 bg-white w-[95%] md:w-[90%] xl:w-[50%] md:px-5 xl:py-5 rounded-[15px] font-descriptive font-bold " >
+          <li className="flex items-center"><FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " />Evaluación nutricional completa</li>
+          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Análisis de composición corporal</li>
+          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Plan de Alimentación personalizado</li>
+          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Guía de Recomendación de Alimentos, marcas y productos</li>
+          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Educación nutricional</li>
+          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Descuentos a cursos, talleres y rifas</li>
+          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Acompañamiento constante vía WA</li>
+          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Establecimiento de metas realistas</li>
+          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Plan de Suplementación *en caso de ser necesario*</li>
+          <li className="flex items-center" > <FaCheckCircle className="text-white bg-orange-500 rounded-[15px] text-[20px] " /> Descuentos en varios centros de ejercicio/entrenamiento </li>
+        </ul>
+      </section>
+
+      <section className="w-[95%] h-auto md:h-auto xl:h-[650px] bg-white rounded-[15px] flex flex-col items-center my-2 shadow-[0_4px_20px_rgba(0,0,0,0.15)] py-3" >
+
+        <div className="w-full flex justify-center items-center gap-x-2 mb-2 xl:my-4 " >
+          <h2 className="text-3xl md:text-4xl  xl:text-5xl font-two-title-1 font-bold  ">
+            Tu espacio de
+          </h2>
+          <h2 className="text-5xl font-two-title-2  md:text-6xl xl:text-7xl " >
+            Salud
+          </h2>
+        </div>
+
+
+        <div className=" w-[90%] flex  overflow-x-auto overflow-y-scroll no-scrollbar rounded-xl  " >
+          <div className="flex animate-scroll " >
+            <div className="bg-[url(/imgs/office-1.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
+            <div className="bg-[url(/imgs/office-2.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
+            <div className="bg-[url(/imgs/office-3.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
+          </div>
+          <div className='flex animate-scroll aria-hidden="true" ' >
+            <div className="bg-[url(/imgs/office-1.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
+            <div className="bg-[url(/imgs/office-2.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
+            <div className="bg-[url(/imgs/office-3.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
+          </div>
+        </div>
+
+      </section>
+
+
+
+
+      {/* <section className="w-[95%] h-[600px] md:h-auto xl:h-[650px] bg-white rounded-[15px] flex flex-col items-center my-4 shadow-[0_4px_20px_rgba(0,0,0,0.15)] ">
+        <div className="w-full h-[200px] xl:h-[300px] bg-[url(/imgs/planes-alimentacion.jpeg)] bg-cover bg-center rounded-t-[15px] " >
+        </div>
+        <div className="w-full flex justify-center items-center gap-x-2 mb-2 xl:my-4 " >
+          <h2 className="text-3xl md:text-4xl xl:text-5xl font-two-title-1 font-bold ">
+            Planes de
+          </h2>
+          <h2 className="text-5xl font-two-title-2 md:text-6xl xl:text-7xl " >
+            Alimentacón
+          </h2>
+        </div>
+        <section className="w-[80%]  ">
+          <h2 className="text-center md:text-xl font-bold xl:text-2xl font-subtitles ">Te presento mis planes de alimentación con los cuáles podrás lograr grandes resultados</h2>
+        </section>
+        <ul className="flex flex-col text-lg md:text-xl xl:text-2xl w-[90%] xl:w-[55%] font-descriptive font-bold ">
+          <li>• Acceso a contenido ilimitado de videos, reseñas, tips, entre otras cosas</li>
+          <li>• Lista del super. (Información de dónde encontrar los productos)</li>
+          <li>• Acceso al grupo de chat para compartir comentarios</li>
+          <li>• Acceso a la base de datos de preguntas comunes completas</li>
+          <li>• Entre otras cosas</li>
+        </ul>
+      </section> */}
+
+
 
     </header>
   )

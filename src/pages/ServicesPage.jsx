@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { dataServices } from "../information/information";
 const ServicesPage = () => {
   return (
     <div className="w-full flex flex-col items-center" >
@@ -11,9 +12,39 @@ const ServicesPage = () => {
         </h2>
       </section>
 
-      <section className="w-[95%] " >
+      <section className="w-[95%]  " >
+
+
+        <div className="w-full   " >
+          {
+            dataServices.map((services, id) => (
+              <div className=" my-2 p-2 flex flex-col items-center rounded-xl bg-white shadow-[0_4px_20px_rgba(0,0,0,0.15)] " key={id}>
+                <div className="relative flex justify-center " >
+                  <div className=" bg-orange-500 py-1 px-2 rounded-t-xl absolute w-[80%]  " >
+                    <h2 className="font-bold text-white text-center " > {services.title} </h2> 
+                  </div>
+                  <img src={services.img} alt="" className="w-[80%]  rounded-xl  " />
+                </div>
+
+                <div className="flex flex-col items-center" >
+                  <h3 className="font-bold" > {services.subTitle} </h3>
+                  <p className="p-1  " > {services.information} </p>
+                </div>
+
+              </div>
+            ))
+      
+          }
+        </div>
+    
+
+
+
+
+
+
   
-        <div className="w-full flex flex-col items-center xl:flex-row " >
+        {/* <div className="w-full flex flex-col items-center xl:flex-row " >
           <div className="bg-[url(/imgs/nutricion-clinica.jpg)] w-full h-[220px] md:h-[350px] bg-cover bg-center rounded-[20px] shadow-[0_4px_20px_rgba(0,0,0,0.15)] mt-2   " ></div>
           <div className="xl:flex xl:flex-col xl:w-full  " >
             <h2 className='text-white font-one-title font-bold text-xl md:text-2xl bg-[rgba(254,64,52,1)] rounded-t-[25px]  py-1  text-center'>NUTRICIÓN CLÍNICA</h2>
@@ -23,14 +54,14 @@ const ServicesPage = () => {
               </h3>
           </div>
           </div>
-        </div>
+        </div> */}
 
 
-        < hr className="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent dark:via-neutral-400 opacity-25"   />
+        {/* < hr className="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent dark:via-neutral-400 opacity-25"   /> */}
         {/* < hr className="h-1 bg-gray-300 shadow-md my-12"   /> */}
 
    
-        <div className="w-full flex flex-col items-center xl:flex-row " >
+        {/* <div className="w-full flex flex-col items-center xl:flex-row " >
           <div className="bg-[url(/imgs/control-peso-1.jpg)] w-full h-[220px] md:h-[350px] bg-cover bg-center rounded-[20px] shadow-[0_4px_20px_rgba(0,0,0,0.15)] mt-2  order-1 xl:order-2 " ></div>
           <div className="xl:flex xl:flex-col xl:w-full order-2 xl:order-1 " >
             <h2 className='text-white font-one-title font-bold text-xl md:text-2xl bg-[rgba(254,64,52,1)] rounded-t-[25px]  py-1  text-center'>CONTROL DE PESO</h2>
@@ -40,13 +71,13 @@ const ServicesPage = () => {
               </h3>
           </div>
           </div>
-        </div>
+        </div> */}
 
 
-        < hr className="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent dark:via-neutral-400 opacity-25"   />
+        {/* < hr className="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent dark:via-neutral-400 opacity-25"   /> */}
 
   
-        <div className="w-full flex flex-col items-center xl:flex-row " >
+        {/* <div className="w-full flex flex-col items-center xl:flex-row " >
           <div className="bg-[url(/imgs/educacion-diabetes-1.jpg)] w-full h-[220px] md:h-[350px] bg-cover bg-center rounded-[20px] shadow-[0_4px_20px_rgba(0,0,0,0.15)] mt-2  " ></div>
           <div className="xl:flex xl:flex-col xl:w-full " >
             <h2 className='text-white font-one-title font-bold text-xl md:text-2xl bg-[rgba(254,64,52,1)] rounded-t-[25px]  py-1  text-center '>EDUCACÍON EN DIABETES</h2>
@@ -56,13 +87,13 @@ const ServicesPage = () => {
               </h3>
           </div>
           </div>
-        </div>
+        </div> */}
  
 
-        < hr className="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent dark:via-neutral-400 opacity-25"   />
+        {/* < hr className="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent dark:via-neutral-400 opacity-25"   /> */}
 
       
-        <div className="w-full flex flex-col items-center xl:flex-row " >
+        {/* <div className="w-full flex flex-col items-center xl:flex-row " >
           <div className="bg-[url(/imgs/alimentacion-vegetariana.jpg)] w-full h-[220px] md:h-[350px] bg-cover bg-center rounded-[20px] shadow-[0_4px_20px_rgba(0,0,0,0.15)] mt-2 order-1 xl:order-2  " ></div>
           <div className="xl:flex xl:flex-col xl:w-full order-2 xl:order-1" >
             <h2 className='text-white font-one-title font-bold text-xl md:text-2xl bg-[rgba(254,64,52,1)] rounded-t-[25px]  py-1  text-center'>ALIMENTACÍON VEGETARIANA</h2>
@@ -72,7 +103,7 @@ const ServicesPage = () => {
               </h3>
           </div>
           </div>
-        </div>
+        </div> */}
    
 
         <div className="w-full flex justify-center my-2 " >
