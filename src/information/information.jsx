@@ -109,7 +109,7 @@ export const dataServices = [
 
 export const dataPlans = [
     {
-      img: "/imgs/plan1.jpg",
+      img: "/imgs/roomies.jpg",
       title1: "PLAN DUO",
       description1bold: "Parejas o Roomies",
       description1: "que compartan comidas justos. ",
@@ -117,7 +117,7 @@ export const dataPlans = [
       description2: "$999 inicial duo, $899 seguimiento duo"
     },
     {
-      img: "/imgs/plan2.jpg",
+      img: "/imgs/family.jpg",
       title1: "PLAN FAMILIAR",
       description1bold: "Familias a partir de 3 integrantes",
       description1: "que compartan comidas.",
@@ -125,7 +125,7 @@ export const dataPlans = [
       description2: "$499 p/p inicial, $499 seguimientos"
     },
     {
-      img: "/imgs/plan3.jpg",
+      img: "/imgs/annual.jpg",
       title1: "PAQUETE ANUAL",
       description1bold: "Que la disidia no te gane.",
       description1: "Este plan es perfecto para ti si deseas tener mas compromiso contigo y tus objetivos.",
@@ -133,7 +133,7 @@ export const dataPlans = [
       description2: "$5445 inicial + 11 seguimientos"
     },
     {
-      img: "/imgs/plan4.jpg",
+      img: "/imgs/student.jpg",
       title1: "PAQUETE ESTUDIANTE",
       description1bold: "Presenta tu credencial vigente",
       description1: "de ciclo escolar o constancia de estudios",
