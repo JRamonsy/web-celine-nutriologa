@@ -207,23 +207,81 @@ const HomePage = () => {
 
 
         <div className=" w-[90%] md:w-[80%] xl:w-[70%] flex overflow-x-hidden overflow-y-scroll no-scrollbar rounded-xl xl:overflow-y-auto mb-5  " >
-          <div className="flex animate-scroll " >
-            <div className="bg-[url(/imgs/office-1.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
-            <div className="bg-[url(/imgs/office-2.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
-            <div className="bg-[url(/imgs/office-3.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
-            <div className="bg-[url(/imgs/logo-footer-1.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
-            <div className="bg-[url(/imgs/office-4.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
-            <div className="bg-[url(/imgs/office-5.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
-            <div className="bg-[url(/imgs/office-6.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
+          <div className="flex font-descriptive font-bold animate-scroll " >
+            <div className=" relative flex justify-center " >
+             <div className="bg-[url(/imgs/office-1.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2 " ></div>
+             <div className="absolute  top-0 bg-orange-500 w-[60%] py-2 rounded-lg " >
+              <h3 className="text-white text-center md:text-lg xl:text-xl " >Consultorio Pozos</h3>
+             </div>
+            </div>
+            <div className=" relative flex justify-center " >
+             <div className="bg-[url(/imgs/office-2.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2 " ></div>
+             <div className="absolute  top-0 bg-orange-500 w-[60%] py-2 rounded-lg " >
+              <h3 className="text-white text-center md:text-lg xl:text-xl " >Consultorio Pozos</h3>
+             </div>
+            </div>
+            <div className=" relative flex justify-center " >
+             <div className="bg-[url(/imgs/office-3.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2 " ></div>
+             <div className="absolute  top-0 bg-orange-500 w-[60%] py-2 rounded-lg " >
+              <h3 className="text-white text-center md:text-lg xl:text-xl " >Consultorio Pozos</h3>
+             </div>
+            </div>
+            <div className=" relative flex justify-center " >
+             <div className="bg-[url(/imgs/office-4.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2 " ></div>
+             <div className="absolute  bottom-0 bg-orange-500 w-[60%] py-2 rounded-lg " >
+              <h3 className="text-white text-center md:text-lg xl:text-xl " >Consultorio Tequis</h3>
+             </div>
+            </div>
+            <div className=" relative flex justify-center " >
+             <div className="bg-[url(/imgs/office-5.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2 " ></div>
+             <div className="absolute  bottom-0 bg-orange-500 w-[60%] py-2 rounded-lg " >
+              <h3 className="text-white text-center md:text-lg xl:text-xl " >Consultorio Tequis</h3>
+             </div>
+            </div>
+            <div className=" relative flex justify-center " >
+             <div className="bg-[url(/imgs/office-6.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2 " ></div>
+             <div className="absolute  bottom-0 bg-orange-500 w-[60%] py-2 rounded-lg " >
+              <h3 className="text-white text-center md:text-lg xl:text-xl " >Consultorio Tequis</h3>
+             </div>
+            </div>
           </div>
           <div className='flex animate-scroll aria-hidden="true" ' >
-            <div className="bg-[url(/imgs/office-1.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
-            <div className="bg-[url(/imgs/office-2.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
-            <div className="bg-[url(/imgs/office-3.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
-            <div className="bg-[url(/imgs/logo-footer-1.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
-            <div className="bg-[url(/imgs/office-4.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
-            <div className="bg-[url(/imgs/office-5.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
-            <div className="bg-[url(/imgs/office-6.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2  " ></div>
+            <div className=" relative flex justify-center " >
+             <div className="bg-[url(/imgs/office-1.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2 " ></div>
+             <div className="absolute  top-0 bg-orange-500 w-[60%] py-2 rounded-lg " >
+              <h3 className="text-white text-center md:text-lg xl:text-xl " >Consultorio Pozos</h3>
+             </div>
+            </div>
+            <div className=" relative flex justify-center " >
+             <div className="bg-[url(/imgs/office-2.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2 " ></div>
+             <div className="absolute  top-0 bg-orange-500 w-[60%] py-2 rounded-lg " >
+              <h3 className="text-white text-center md:text-lg xl:text-xl " >Consultorio Pozos</h3>
+             </div>
+            </div>
+            <div className=" relative flex justify-center " >
+             <div className="bg-[url(/imgs/office-3.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2 " ></div>
+             <div className="absolute  top-0 bg-orange-500 w-[60%] py-2 rounded-lg " >
+              <h3 className="text-white text-center md:text-lg xl:text-xl " >Consultorio Pozos</h3>
+             </div>
+            </div>
+            <div className=" relative flex justify-center " >
+             <div className="bg-[url(/imgs/office-4.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2 " ></div>
+             <div className="absolute  bottom-0 bg-orange-500 w-[60%] py-2 rounded-lg " >
+              <h3 className="text-white text-center md:text-lg xl:text-xl " >Consultorio Tequis</h3>
+             </div>
+            </div>
+            <div className=" relative flex justify-center " >
+             <div className="bg-[url(/imgs/office-5.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2 " ></div>
+             <div className="absolute  bottom-0 bg-orange-500 w-[60%] py-2 rounded-lg " >
+              <h3 className="text-white text-center md:text-lg xl:text-xl " >Consultorio Tequis</h3>
+             </div>
+            </div>
+            <div className=" relative flex justify-center " >
+             <div className="bg-[url(/imgs/office-6.jpg)] w-[300px] h-[300px] bg-center bg-cover rounded-xl mx-2 " ></div>
+             <div className="absolute  bottom-0 bg-orange-500 w-[60%] py-2 rounded-lg " >
+              <h3 className="text-white text-center md:text-lg xl:text-xl " >Consultorio Tequis</h3>
+             </div>
+            </div>
           </div>
         </div>
 
