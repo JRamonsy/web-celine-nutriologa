@@ -16,7 +16,7 @@ const Navbar = () => {
         </div>
 
         <div className=" flex flex-col items-center ">
-          <h1 className="text-2xl md:text-3xl xl:text-4xl font-title-one  text-white   text-shadow-2xs text-shadow-black              ">
+          <h1 className="text-2xl md:text-3xl xl:text-4xl font-title-one  text-white                ">
             CELINE BETANCOURT
           </h1> 
           <h2 className="text-white md:text-xl xl:text-2xl  font-home-one  ">
