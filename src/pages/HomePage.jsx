@@ -30,7 +30,7 @@ const HomePage = () => {
             <Link to="/acerca-de-mi" >CONÓCEME</Link>
           </button>
           <button className="bg-red-400 text-white rounded-[15px] py-1 px-3 cursor-pointer ml-1 md:ml-2 hover:bg-red-500 border border-white/20 transition duration-300 shadow-md md:text-3xl " >
-            <Link to="/contacto" >CONTACTAME</Link>
+            <Link to="/contacto" >CONTÁCTAME</Link>
           </button>
         </div>
       </div>
@@ -51,7 +51,7 @@ const HomePage = () => {
                 <Link to="/acerca-de-mi" >CONÓCEME</Link>
               </button>
               <button className="bg-red-400 text-white rounded-[15px] py-1 px-3 cursor-pointer ml-1 md:ml-2 hover:bg-red-500 border border-white/20 transition duration-300 shadow-md text-2xl " >
-                <Link to="/contacto" >CONTACTAME</Link>
+                <Link to="/contacto" >CONTÁCTAME</Link>
               </button>
             </div>
           </div>
